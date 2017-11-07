@@ -1,2 +1,2 @@
-# linphone
+# Linphone
 Docker image for Linephone
