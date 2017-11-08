@@ -14,5 +14,6 @@ RUN add-apt-repository ppa:linphone/release && \
     rm -rf /var/lib/apt/lists/*
 
 # Copy SIPp Scripts and sample sound pcaps
-COPY scripts/ /
-COPY pcap/ /
+RUN mkdir scripts && mkdir pcap
+COPY scripts/ /scripts/
+COPY pcap/ /pcap/
