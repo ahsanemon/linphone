@@ -29,3 +29,21 @@ Command for 1000 calls
 -rp  =  rate period in milliseconds for call rate.
 
 Example:-   -r 10  -rp 10000   =>   This means 10 calls for every 10 secs.
+
+
++ Register  UAC
+
+> sudo ./sipp 1XX.1XX.2XX.2XX(Server IP) -t u1 -sf  Register.xml -inf  Register.csv -i 1XX.1XX.2XX.1XX (Local IP) -m 1 -trace_err -trace_msg -trace_logs 
+
++ Invite UAC
+
+> sudo ./sipp 1XX.1XX.2XX.2XX(Server IP) -t u1 -sf  Invite.xml -inf  Invite.csv -i 1XX.1XX.2XX.1XX (Local IP) -m 1 -trace_err -trace_msg -trace_logs
+
++ Register UAS
+
+> ./sipp -sn Register.xml
+
+
++ Invite UAS
+
+> ./sipp -sn Invite.xml
