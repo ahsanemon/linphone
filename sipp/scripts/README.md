@@ -12,6 +12,7 @@ milliseconds (-rp), max 100 concurrent calls (-l) and make a max of 100000 calls
 > sipp 10.0.0.10 -sf invite-auth-sdp-nomedia.xml -inf user-accounts.csv -m 100000 -l 100 -r 10 -rp 10000
 
 
+
 + INVITE.XML 
 
 Command for 1000 calls
