@@ -1,0 +1,8 @@
+# Make calls using accounts sequentially
+SEQUENTIAL
+# Username: 120001
+# Password: abc123
+# SIP Proxy: 10.0.0.10
+# Destination Number: 448400090009
+120001;10.0.0.10;[authentication username=120001 password=abc123];448400090009;
+120002;10.0.0.10;[authentication username=120002 password=abc124];448400090009;
