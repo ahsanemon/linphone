@@ -19,11 +19,14 @@ RUN wget https://sourceforge.net/projects/sipp/files/sipp/3.4/sipp-3.3.990.tar.g
     cd sipp-3.3.990 && \
     ./configure --with-sctp --with-pcap --with-openssl && \
     make
+    
+# Alternately install SIPp form ubuntu repository
+# apt-get install sip-tester
+
 # Installing dependencies of LinPhone   
 RUN apt-get update && \
     apt-get -y install \
             nano \
-            sip-tester \
             software-properties-common \
             python-software-properties && \
     rm -rf /var/lib/apt/lists/*
